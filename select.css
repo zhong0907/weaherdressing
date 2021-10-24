@@ -34,7 +34,7 @@
 }
 
 .sublove input[type="submit"] {
-  width: 150px;
+  width: 200;
   border: 2px solid #2ecc71;
   cursor: pointer;
   font-weight: bolder;
@@ -45,6 +45,7 @@
 }
 
 
+
 .footer{
   height: 50px; /*設定footer本身高度*/
   margin-top: 50px; /*隨footer高度需做調整*/
@@ -53,3 +54,5 @@
   margin: 0 auto;
   padding: auto;
 }
+
+
