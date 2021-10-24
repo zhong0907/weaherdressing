@@ -26,6 +26,9 @@
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+               <li class="nav-item">
+                  <a class="nav-link " href="#">關於我們</a>
+               </li>
                   <li class="nav-item">
                       <a class="nav-link " href="#">穿搭建議</a>
                    </li>
@@ -53,7 +56,7 @@
       <span class="align-middle">
       <div class="content"  >
       <div style="background-color:#f8f8f8;" text-align:center >
-      <div class="row " g-1>
+      <div class="row " >
          <form class="select" align ="center" >
             <!--標題字-->
             <div style="background-color:#86add1" text-align:center >
@@ -111,71 +114,41 @@
                     }
                         changeCity(document.getElementById("city-list").selectedIndex);
             </script>
-      
         <!--選擇目的地-->
         <br>
         &ensp;
               <br>
             <label for="select" scope="col" >出門目的</label>
          <select name="select3" id="select3">
-
-
              <option>請選擇</option>
              <option>學校</option>
              <option>公司</option>
              <option>出遊</option>
          </select>
          </span>
-  </div>
-  </div>
-  </div>
-</nav>
-
+         
 <!--我的最愛-->
-<nav>
-   <span  valign="center" >
-      <div class="col-6 ">
-      <div class="content" align ="center" >
-      <div class="sublove">
-         
-         <input type="submit" id='love1' value="我的最愛1" data-action ="submit"/> 
-         
-         <tr><td  valign="center"id='love1tr'>地區-目的</td></tr>
-         </div>
-      <div class="buttonl1">
-          <input type="button" id='love1chenge' value="更改" style="border-radius: 12px;border: 5px #e9e4e4 double;background-color:#86add1;" >
-         </input>
-         </div>
-         </script>
-   </div>
-</nav>
-<nav>
-   <span  valign="center" >
-      <div class="col-6 ">
-      <div class="content" align ="center" >
-      <div class="sublove">
-         
-         <input type="submit" id='love2' value="我的最愛2" data-action ="submit"/>
-         <tr><td  valign="center"id='love2tr'>地區-目的</td></tr>
-      </div>
-      <div class="buttonl2">
-          <input type="button" id='love2chenge' value="更改"style="border-radius: 12px;border: 5px #e9e4e4 double;background-color:#86add1;"/>
-         </input>
-      </div>
-     </div>
-     </div>
-     </div>
-   </script>
-</nav>
-
-
+         <br>
+         &ensp;
+         <br>
+         <input class="buttonl1" type="button" id='love1chenge' value="添加到我的最愛" style="border-radius: 10px #e9e4e4 double;background-color:#86add1;"/>
+         <br>
+         &ensp;
+         <br>
+         <label for="select" scope="col" >我的最愛</label>
+         <select name="select3" id="select3">
+             <option>請選擇</option>
+             <option>1-未設定</option>
+             <option>2-未設定</option>
+             <option>3-未設定</option>
+         </select>
+         </span>
 <!--送出結果-->
-<nav>
    <span class="align-middle" valign="center" >
       <div class="content" align ="center" >
       <div class="row" >
       <div class="sublove">
-         <input type="submit" id='love2' value="查看天氣穿搭" data-action ="submit"/>
+         <input type="submit" id='love2' value="查看穿搭" data-action ="submit"/>
      </div>
       </div>
          </div>
