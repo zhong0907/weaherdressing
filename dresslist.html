@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天氣穿衣結果頁</title>
+    <link rel="stylesheet" href="dresslist.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-1">
+      <div class="container-fluid">
+           <!-- navbar title -->
+            <a class="navbar-brand" href="../">Weather Dressing</a>
+
+            <!-- burger button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+             aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+               <li class="nav-item">
+                  <a class="nav-link " href="#">關於我們</a>
+               </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#">穿搭建議</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link " href="#">店家推薦</a>
+                 </li>
+                
+                   <li class="nav-item">
+                      <a href="#" class="nav-link">上傳照片</a>
+                   </li>
+                </ul>
+
+                <!-- login & register -->
+              <ul class="navbar-nav navbar-right">
+                   <li class="nav-item">
+                       <a href="../members/login.ejs" class="nav-link active">登入</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="../members/register" class="nav-link">註冊</a>
+                  </li>
+              </ul>
+           </div>
+      </div>
+   </nav>
+
+   <nav>
+    <span class="align-middle">
+        <div class="content"  >
+        <div style="background-color:#f8f8f8;" text-align:center >
+        <div class="row " >
+            <form class="select" align ="center" >
+                <!--標題字-->
+                <div style="background-color:#86add1" text-align:center >
+                  <font color="White"><h2>選擇你的條件</h2></font>
+                </div>
+                <br>
+                &ensp;
+                <br>
+                <label for="select" scope="col" >年齡</label>
+                <select name="select1" id="select1">
+                    <option>請選擇</option>
+                    <option>1-未設定</option>
+                    <option>2-未設定</option>
+                    <option>3-未設定</option>
+                </select>
+
+                <label for="select" scope="col" >性別</label>
+         <select name="select2" id="select2">
+             <option>請選擇</option>
+             <option>女性</option>
+             <option>男性</option>
+             <option>中性</option>
+         </select>
+             <br>
+             &ensp;
+             <br>
+             <div id="checkbox">
+                <label><input type="checkbox" name="variety" value="綜藝" checked="checked" /><span class="round button">綜藝</span></label>
+                <label><input type="checkbox" name="variety" value="節目" checked="checked" /><span class="round button">節目</span></label>
+                <label><input type="checkbox" name="variety" value="隨選隨看" checked="checked" /><span class="round button">隨選隨看</span></label>
+                <label><input type="checkbox" name="variety" value="直播" /><span class="round button">直播</span></label>
+                <label><input type="checkbox" name="variety" value="台綜" /><span class="round button">台綜</span></label>
+                <label><input type="checkbox" name="variety" value="陸綜" /><span class="round button">陸綜</span></label>
+                <label><input type="checkbox" name="variety" value="韓綜" /><span class="round button">韓綜</span></label>
+                <label><input type="checkbox" name="variety" value="遊戲" /><span class="round button">遊戲</span></label>
+                <label><input type="checkbox" name="variety" value="益智" /><span class="round button">益智</span></label>
+                <label><input type="checkbox" name="variety" value="談話" /><span class="round button">談話</span></label>
+                <label><input type="checkbox" name="variety" value="娛樂" /><span class="round button">娛樂</span></label>
+                <label><input type="checkbox" name="variety" value="網紅" /><span class="round button">網紅</span></label>
+                </div>
+                <style>
+                    #checkbox input[type="checkbox"] {display: none; }
+                    #checkbox input:checked + .button {background: #5e7380; color: #fff;}
+                    #checkbox .button {display: inline-block; margin: 0 5px 10px 0; padding: 5px 10px; background: #f7f7f7; color: #333; cursor: pointer; }
+                    #checkbox .button:hover {background: #bbb; color: #fff; }
+                    #checkbox .round {border-radius: 5px; }
+                    </style>
+             </div>
+<!--送出結果-->
+<span class="align-middle" valign="center" >
+    <div class="content" align ="center" >
+    <div class="row" >
+    <div class="sublove">
+       <input type="submit" id='love2' value="查看推薦商家" data-action ="submit"/>
+   </div>
+    </div>
+       </div>
+    </div>
+ </span>
+
+  </nav>
+</html>
+
+    <!--背景-->
+  <body>
+    <div class="fixed-bottom">
+     <footer class="footer" > 
+         <div class="container">
+             <div class="footer_body">
+                 <p></p>
+             </div>
+         </div>
+     </footer>
+    </div>
+ 
+     <!-- Optional JavaScript; choose one of the two! -->
+ 
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
+     <!-- Option 2: Separate Popper and Bootstrap JS -->
+     <!--
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     -->
+   </body>
+ </html>
